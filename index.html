@@ -2,29 +2,27 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Zheanel's Website</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link href="./css/bootstrap.min.css" rel="stylesheet" />
   <link href="./css/app.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
 
-  <div class="container" id="card_show">
+  <div class="container" id="welcome_card_term">
     <div class="row justify-content-md-center">
       <div class="col-md">
-        <div class="card">
-          <h3 class="text-center fw-semibold">ZHEANEL</h3>
-          <img src="./img/profile.png" width="128px" height="128px" class="mx-auto d-block circle" alt="...">
+        <div class="card" id="terminal_welcome">
           <div class="card-body">
             <div class="d-grid gap-2">
-              <button class="btn btn-primary" type="button"><i class="fa-brands fa-twitter"></i> Twitter</button>
-              <button class="btn btn-primary" type="button"><i class="fa-brands fa-discord"></i> Discord</button>
-              <button class="btn btn-primary" type="button"><i class="fa-brands fa-bluesky"></i> Bluesky</button>
-              <hr class="hr" />
-              <button class="btn btn-primary" type="button"><i class="fa-solid fa-envelope"></i> Email</button>
+              <h6>guest@zheanel:~$ Init System...</h6>
+              <h6 id="sld1">guest@zheanel:~$ Welcome, guest ;)</h6>
+              <h6 id="sld2">guest@zheanel:~$ I see you're interested on me, huh?</h6>
+              <h6 id="sld3">guest@zheanel:~$ Click the button below to see all my stuff ^^</h6>
+              <button id="sld4" class="btn btn-primary" type="button"><div class="blink">./main</div></button>
             </div>
           </div>
         </div>
@@ -32,28 +30,60 @@
     </div>
   </div>
 
-  <!--<div class="container invisible" id="modal_social_networks">
+  <div class="container" id="main_card">
     <div class="row justify-content-md-center">
       <div class="col-md">
         <div class="card">
+          <h3 class="text-center fw-semibold">ZHEANEL</h3>
+          <img src="./img/profile.png" width="128px" height="128px" class="mx-auto d-block circle" alt="">
           <div class="card-body">
             <div class="d-grid gap-2">
-              <button class="btn btn-primary" type="button"><i class="fa-brands fa-twitter"></i> Twitter</button>
-              <button class="btn btn-primary" type="button"><i class="fa-brands fa-discord"></i> Discord</button>
-              <button class="btn btn-primary" type="button"><i class="fa-brands fa-bluesky"></i> Bluesky</button>
+              <button class="btn btn-primary" type="button" id="show_social_networks">Social Networks</button>
+              <button class="btn btn-primary" type="button" onclick="window.open('/gallery')">Gallery</button>
+              <button class="btn btn-primary" type="button"
+                onclick="window.open('https://listen.zheanel.es')">ZheanelFM</button>
+              <hr class="hr" />
+              <button class="btn btn-primary" type="button"
+                onclick="window.location.href='mailto:skoopeyt@gmail.com'"><i class="fa-solid fa-envelope"></i>
+                Email</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>-->
-  
+  </div>
+
+  <div class="container" id="modal_social_networks">
+    <div class="row justify-content-md-center">
+      <div class="col-md">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-grid gap-2">
+              <h3 class="text-center fw-semibold">SOCIAL NETWORKS</h3>
+              <button class="btn btn-primary" type="button"><i class="fa-brands fa-twitter"></i> Twitter</button>
+              <button class="btn btn-primary" type="button"><i class="fa-brands fa-discord"></i> Discord</button>
+              <button class="btn btn-primary" type="button"><i class="fa-brands fa-bluesky"></i> Bluesky</button>
+              <hr class="hr" />
+              <button class="btn btn-primary" type="button"><i class="fa-solid fa-vr-cardboard"></i> VRChat</button>
+              <button class="btn btn-primary" type="button" id="gotoMain"><i class="fa-solid fa-backward"></i> Go
+                back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="fixed-bottom text-center white">
+    <p>Built with <i class="fa-solid fa-heart hearth"></i> by Zheanel</p>
+  </footer>
+
 
   <!--Javascript libraries import-->
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/popper.min.js"></script>
   <script src="./js/jquery-3.7.1.min.js"></script>
   <script src="./js/app.js"></script>
+
 
 </body>
 
