@@ -1,15 +1,25 @@
-/*Fuente Baloo Paaji de Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-
 @font-face {
     font-family: 'Modenine';
-    src: URL('../fonts/MODENINE.TTF') format('truetype');
-  }
+    src: url('ModeNine.woff2') format('woff2'),
+        url('ModeNine.woff') format('woff'),
+        url('ModeNine.svg#ModeNine') format('svg'),
+        url('../fonts/MODENINE.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 @font-face {
     font-family: 'DOS';
-    src: URL('../fonts/DOS.TTF') format('truetype');
+    src: url('PerfectDOSVGA437.woff2') format('woff2'),
+        url('PerfectDOSVGA437.woff') format('woff'),
+        url('PerfectDOSVGA437.svg#PerfectDOSVGA437') format('svg'),
+        url('../fonts/DOS.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 
 body {
     background-color: #130f40;
