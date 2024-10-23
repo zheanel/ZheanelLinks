@@ -1,15 +1,16 @@
 $(document).ready(function () {
     $("#modal_social_networks, #main_card, footer, #sld1, #sld2, #sld3, #sld4").hide();
- 
+    $("#welcome_card_term").removeClass("invisible");
     $("#sld1").delay(5000).show(2000);
-    $("#sld2").delay(10000).show(1500);
-    $("#sld3").delay(18000).show(1500);
+    $("#sld2").delay(10000).show(2000);
+    $("#sld3").delay(18000).show(2000);
     $("#sld4").delay(21000).show(0);
 
     $("#sld4").on("click", function () {
         $("#welcome_card_term").fadeIn(1000).hide(0);
         $("footer").fadeIn(2000).show(0);
         $("#main_card").removeClass("invisible");
+        $("#modal_social_networks").removeClass("invisible");
         $("#main_card").fadeIn(2000).show(0);
     });
 
