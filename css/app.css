@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Modenine';
-    src: url('ModeNine.woff2') format('woff2'),
-        url('ModeNine.woff') format('woff'),
-        url('ModeNine.svg#ModeNine') format('svg'),
+    src: url('../fonts/ModeNine.woff2') format('woff2'),
+        url('../fonts/ModeNine.woff') format('woff'),
+        url('../fonts/ModeNine.svg#ModeNine') format('svg'),
         url('../fonts/MODENINE.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -11,9 +11,9 @@
 
 @font-face {
     font-family: 'DOS';
-    src: url('PerfectDOSVGA437.woff2') format('woff2'),
-        url('PerfectDOSVGA437.woff') format('woff'),
-        url('PerfectDOSVGA437.svg#PerfectDOSVGA437') format('svg'),
+    src: url('../fonts/PerfectDOSVGA437.woff2') format('woff2'),
+        url('../fonts/PerfectDOSVGA437.woff') format('woff'),
+        url('../fonts/PerfectDOSVGA437.svg#PerfectDOSVGA437') format('svg'),
         url('../fonts/DOS.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
