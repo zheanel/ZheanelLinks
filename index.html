@@ -18,7 +18,8 @@
         <div class="card" id="terminal_welcome">
           <div class="card-body">
             <div class="d-grid gap-2">
-              <h6>guest@zheanel:~$ Init System...</h6>
+              <h6 id="typing"></h6>
+              <h6><span class="typer" data-delay="115" data-words="connecting to guest@zheanel.es..." data-colors="#adff2f" data-loop="false"></span></h6>
               <h6 id="sld1">guest@zheanel:~$ Welcome, guest ;)</h6>
               <h6 id="sld2">guest@zheanel:~$ I see you're interested in me, huh?</h6>
               <h6 id="sld3">guest@zheanel:~$ Click the button below to check all my stuff ^^</h6>
@@ -63,9 +64,9 @@
               <button class="btn btn-primary" type="button" onclick="window.open('https://twitter.com/zheanel_es')"><i class="fa-brands fa-twitter"></i> Twitter</button>
               <button class="btn btn-primary" type="button" onclick="window.open('https://t.me/zheanel_es')"><i class="fa-brands fa-discord"></i> Discord</button>
               <button class="btn btn-primary" type="button" onclick="window.open('https://t.me/zheanel_es')"><i class="fa-brands fa-telegram"></i> Telegram</button>
-              <button class="btn btn-primary" type="button" onclick="window.open('bsky.app/profile/zheanel.bsky.social')"><i class="fa-brands fa-bluesky"></i> Bluesky</button>
-              <hr class="hr" />
+              <button class="btn btn-primary" type="button" onclick="window.open('https://bsky.app/profile/zheanel.bsky.social')"><i class="fa-brands fa-bluesky"></i> Bluesky</button>
               <button class="btn btn-primary" type="button" onclick="window.open('https://vrchat.com/home/user/usr_1378d3b7-4b68-43d0-bfc7-1053be6737c4')"><i class="fa-solid fa-vr-cardboard"></i> VRChat</button>
+              <hr class="hr" />
               <button class="btn btn-primary" type="button" id="gotoMain"><i class="fa-solid fa-backward"></i> Go
                 back</button>
             </div>
@@ -79,9 +80,8 @@
     <p>Built with <i class="fa-solid fa-heart hearth"></i> by Zheanel</p>
   </footer>
 
-
   <!--Javascript libraries import-->
-  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+  <script async src="./js/typer.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/popper.min.js"></script>
   <script src="./js/jquery-3.7.1.min.js"></script>

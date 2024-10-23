@@ -1,10 +1,10 @@
 $(document).ready(function () {
     $("#modal_social_networks, #main_card, footer, #sld1, #sld2, #sld3, #sld4").hide();
  
-    $("#sld1").delay(2000).show(2000);
-    $("#sld2").delay(6000).show(2000);
-    $("#sld3").delay(12000).show(2000);
-    $("#sld4").delay(16000).show(0);
+    $("#sld1").delay(5000).show(2000);
+    $("#sld2").delay(10000).show(2000);
+    $("#sld3").delay(18000).show(2000);
+    $("#sld4").delay(21000).show(0);
 
     $("#sld4").on("click", function () {
         $("#welcome_card_term").fadeIn(1000).hide(0);
