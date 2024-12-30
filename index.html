@@ -46,7 +46,7 @@
           <img src="./img/profile.png" width="128px" height="128px" class="mx-auto d-block circle" alt="">
           <div class="card-body">
             <div class="d-grid gap-2">
-              <p style="text-align: center;"><strong>Hiya 👋. I'm Zheanel, a 21 y/o from Spain interested in technology</strong></p>
+              <p style="text-align: center;" ><strong>Hiya 👋. I'm Zheanel, a 21 y/o from Spain interested in technology</strong></p>
               <button class="btn btn-primary" type="button" id="show_social_networks"><i class="fa-solid fa-user"></i> Social Networks</button>
               <button class="btn btn-primary" type="button"
                 onclick="window.open('https://listen.zheanel.es')"><i class="fa-solid fa-radio"></i> ZheanelFM</button>
@@ -84,6 +84,22 @@
     </div>
   </div>
 
+  <!--Birthday Alert-->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header">
+        <strong class="me-auto">It's my day!</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Today is my birthday! Yuhuu 🥳🎂
+      </div>
+    </div>
+    
+  </div>
+  
+  
+
   <footer class="fixed-bottom text-center white">
     <p>Built with <i class="fa-solid fa-heart hearth"></i> by Zheanel</p>
   </footer>
@@ -94,8 +110,6 @@
   <script src="./js/popper.min.js"></script>
   <script src="./js/jquery-3.7.1.min.js"></script>
   <script src="./js/app.js"></script>
-
-
 </body>
 
 </html>

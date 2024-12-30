@@ -7,6 +7,7 @@ $(document).ready(function () {
   $("#sld2").delay(8000).show(1500);
   $("#sld3").delay(10000).show(1500);
   $("#sld4").delay(12000).show(0);
+  
 
   $("#sld4").on("click", function () {
     $("#welcome_card_term").fadeIn(1000).hide(0);
@@ -14,6 +15,7 @@ $(document).ready(function () {
     $("#main_card").removeClass("invisible");
     $("#modal_social_networks").removeClass("invisible");
     $("#main_card").fadeIn(2000).show(0);
+    birthday();
   });
 
   $("#show_social_networks").on("click", function () {
@@ -26,3 +28,22 @@ $(document).ready(function () {
     $("#main_card").fadeIn(2000).show(0);
   });
 });
+
+
+function birthday() {
+  // Birthday Reminder!
+  const todayDate = new Date();
+  const todayMonth = todayDate.getMonth() + 1;
+  const todayDay = todayDate.getDate();
+
+  const birthdayD = 10;
+  const birthdayM = 2;
+
+  if (todayMonth === birthdayM && todayDay === birthdayD) {
+    const toastLiveExample = document.getElementById('liveToast')
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    toastBootstrap.show();
+  }
+
+}
+
